@@ -1,0 +1,485 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html body{
+    height: 100%;
+    width: 100%;
+    background-color: #000000;
+}
+body nav{
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    height: 9vh;
+    width: 100%;
+    z-index: 2;
+    color: aliceblue;
+    background-color: rgb(34, 33, 33);
+} 
+body nav #one{
+    display: flex;
+   height: 100%;
+   width: 50%;
+   font-size: 35px;
+   align-items: center;
+   margin-left:  20px;
+   justify-content: left;
+   cursor: pointer;
+}
+body nav #two{
+    display: flex;
+    height: 100%;
+    width: 50%;
+    font-size: 20px;
+    align-items: center;
+    margin-right: 60px;
+    justify-content: right;
+ }
+ body nav #two h5{
+    margin-right: 60px;
+    cursor: pointer;
+ }
+#div1{
+    padding-top: 9.0vh;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    position: relative;
+    font-family: Garamond, serif;
+    border-bottom: #A7A7A7 solid;
+    color: #c7b9ba;
+}
+#div1 img {
+    object-fit: cover;
+    position: relative;
+    height: 100%;
+    width: 85%;
+    margin-left: 15%;
+    align-items: center;
+    justify-content: center;  
+  /* filter: brightness(0.2); */
+}
+
+#div1 #lft{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    justify-content: left;
+    align-items: start  ;
+    /* background-color: aqua; */
+}
+#div1 #lft #tx{
+    margin-top: 55vh;
+    /* margin: 30px; */
+    margin-left: 65px;
+    font-family: Garamond, serif;
+    justify-content: center;
+}
+#div1 #lft #bt{
+    margin-top: 15px;
+    margin-left: 30px;
+    /* justify-content: start; */
+}
+#div1 #lft #bt button{
+    height: 40px;
+    width: 19vw;
+    cursor: pointer;
+    font-family: Garamond, serif;
+    /* justify-content: left; */
+    align-items: start;
+    border-radius: 20px;
+    /* border: 2px solid #000000; */
+    background-color: #fdd937;
+}
+#div1 #lft #bt button input{
+    /* background-color: ; */
+    height: 28px;
+    margin-left: 0;
+    border-radius: 15px;
+    /* border- 15px; */
+    border: none;
+
+}
+#div1 #rgt{
+    position: absolute;
+    margin-left: 50%;
+    height: 100%;
+    width: 50%;
+    /* background-color: rgb(11, 52, 38); */
+}
+#div1 img{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+#div2{
+    display: flex;
+    height: 20vh;
+    background-color:  #A7A7A7;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 25px;
+   padding-top: 70px;
+   object-fit: contain;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#div3{
+    display: flex;
+    height: 30vh;
+    justify-content: center;
+    padding: 80px;
+    color: #fdd937;
+    /* padding-bottom: 90px; */
+    object-fit: contain;
+    background: rgb(167,167,167);
+    background: linear-gradient(180deg, rgba(167,167,167,1) 0%, rgba(159,159,159,1) 5%, rgba(127,127,127,1) 26%, rgba(0,0,0,1) 100%);
+}
+#div3 audio{
+    position: absolute;
+    background-color: #fdd937;
+    border-radius: 13px;
+    cursor: pointer;
+    object-fit: contain;
+    /* padding-top: 5px; */
+    padding: 3px;
+}
+#div4{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 0px;
+    height: 110vh;
+    color: #fdd937;
+    width: 100%;
+    /* background: rgb(0,0,0); */
+    justify-content: center;
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 5%, rgba(0,0,0,1) 26%, rgba(0,0,0,1) 100%);
+}
+#div4 #forin{
+    display: flex;
+    flex-direction: column;
+    height: 118vh;
+    width: 100%;
+    /* background-color: aqua; */
+}
+#div4 #forin #forone{
+    display: flex;
+    margin-top: 8vh;
+    height: 55vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgb(37, 133, 101); */
+}
+#div4 #forin #forone #card{
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    height: 41vh;
+    width: 55vh;
+}
+#div4 #forin #forone #card :hover{
+    transform: scale(1.4);
+    transition: 2s;
+}
+#div4 #forin #fortwo #card :hover{
+    transform: scale(1.4);
+    transition: 1.5s;
+}
+#div4 #forin #forone #card img{
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#div4 #forin #fortwo #card img{
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#div4 #forin #fortwo{
+    display: flex;
+    height: 55vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgb(8, 53, 38); */
+}
+#div4 #forin #fortwo #card{
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    height: 38vh;
+    width: 55vh;
+
+}
+
+#div4 h3{
+    font-size: 20px;
+    padding-top: 0px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;    font-size: 20px;
+}
+#div5{
+    display: flex;
+    height: 44vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+#div5 img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+#div6{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    padding-top: 50px;
+    /* justify-content: center; */
+    align-items: center;
+    /* background-color:forestgreen; */
+}
+#div6 h2{
+    color: #fbf7f7;
+    position: absolute;
+    align-items: center;
+    text-align: center;
+    font-size: 38px;
+    padding-top: 20px;
+    justify-content: center;
+}
+#div6 img{
+    position: relative;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    filter: brightness(0.5);
+
+}
+#div6 #all{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    color: aliceblue;
+    filter: brightness(1);
+    /* background-color: #A7A7A7; */
+    padding-top: 50px;
+    justify-content: center;
+    align-items: center;
+}
+#div6 #all #blw{
+    display: flex;
+    height: 80vh;
+    width: 100%;
+    position: absolute;
+    /* background-color: #A7A7A7; */
+    justify-content: center;
+    align-items: center;
+}
+#div6 #all #blw #lt{
+    display: flex;
+    height: 100%;
+    width: 50%;
+    font-size: 24px;
+    justify-content: center;
+    text-align: left;
+    padding-left: 50px;
+    /* background-color: #504848; */
+    justify-content: center;
+    align-items: center;
+}
+#div6 #all #blw #rg{
+    display: flex;
+    height: 100%;
+    width: 50%;
+    padding-left: 50px;
+    font-size: 24px;
+    justify-content: center;
+    text-align: left;
+    align-items: center;
+    /* background-color: #422e2e; */
+    justify-content: center;
+}
+
+
+
+
+
+#end{
+    display: flex;
+    flex-direction: column;
+    height: 30vh;
+    width: 100%;
+    background: rgb(0,0,0);
+    margin-bottom: 5px;
+    justify-content: end;
+    /* background: linear-gradient(180deg, rgba(167,167,167,1) 0%, rgba(159,159,159,1) 5%, rgba(127,127,127,1) 26%, rgba(0,0,0,1) 100%); */
+}
+#end img{
+    height: 100%;
+    width: 30vw;
+    justify-content: centxer;
+    object-fit: contain;
+    margin: 0;
+}
+#end #ig{
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    margin-bottom: 20px;
+   
+}
+#end h5{
+    width: 100%;
+    height: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;    font-size: 20px;
+    color: red;
+    font-size: 20px;
+}
+#end h5 i{
+    color: #fbf7f7;
+    
+}
+#div7{
+    display: flex;
+    height: 50vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background: rgb(167,167,167);
+    background: linear-gradient(180deg, rgb(239, 237, 237) 0%, rgb(200, 198, 198) 5%, rgba(127,127,127,1) 26%, rgba(0,0,0,1) 100%);
+}
+#div7 #round{
+    display: flex;
+    height: 30vh;
+    width: 30vh;
+    margin: 80px;
+    border-radius: 50%;
+    border: #fdd937 solid 1px;
+}
+#div7 #round img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 49%;
+}
+#div8{
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+    width: 100%;
+    padding: 50px;
+    color: #f3f4f6;
+    align-items: center;
+    /* background: rgb(0,0,0); */
+
+}
+#div8 #upld{
+    display: flex;
+    height: 50vh;
+    margin-top: 20px;
+    width: 70vw;
+    justify-content: center;
+    align-items: center;
+    border: #0964b0 dotted 4px;
+}
+#div8 #upld input[type="file"] {
+    outline: none;
+    padding: 4px;
+    margin: -4px;
+  }
+  
+  #div8 #upld  input[type="file"]:focus-within::file-selector-button,
+  #div8 #upld input[type="file"]:focus::file-selector-button {
+    outline: 2px solid #0964b0;
+    outline-offset: 2px;
+  }
+  
+  #div8 #upld  input[type="file"]::before {
+    top: 16px;
+  }
+  
+  #div8 #upld  input[type="file"]::after {
+    top: 14px;
+  }
+  
+  /* ------- From Step 2 ------- */
+  
+  #div8 #upld  input[type="file"] {
+    position: relative;
+  }
+  
+  #div8 #upld  input[type="file"]::file-selector-button {
+    width: 136px;
+    color: transparent;
+  }
+  
+  /* Faked label styles and icon */
+  #div8 #upld  input[type="file"]::before {
+    position: absolute;
+    pointer-events: none;
+    /*   top: 11px; */
+    left: 40px;
+    color: #0964b0;
+    content: "Upload File";
+  }
+  
+  #div8 #upld  input[type="file"]::after {
+    position: absolute;
+    pointer-events: none;
+    /*   top: 10px; */
+    left: 16px;
+    height: 20px;
+    width: 20px;
+    content: "";
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%230964B0'%3E%3Cpath d='M18 15v3H6v-3H4v3c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2v-3h-2zM7 9l1.41 1.41L11 7.83V16h2V7.83l2.59 2.58L17 9l-5-5-5 5z'/%3E%3C/svg%3E");
+  }
+  
+  /* ------- From Step 1 ------- */
+  
+  /* file upload button */
+  #div8 #upld  input[type="file"]::file-selector-button {
+    border-radius: 4px;
+    padding: 0 16px;
+    height: 40px;
+    cursor: pointer;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.05);
+    margin-right: 16px;
+    transition: background-color 200ms;
+  }
+  
+  /* file upload button hover state */
+  #div8 #upld  input[type="file"]::file-selector-button:hover {
+    background-color: #f3f4f6;
+  }
+  
+  /* file upload button active state */
+  #div8 #upld  input[type="file"]::file-selector-button:active {
+    background-color: #e5e7eb;
+  }
+  
+  /* ------------------------ */
+ 
